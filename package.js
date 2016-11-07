@@ -1,6 +1,6 @@
 Package.describe({
 	summary: "A roles based account management system using bootstrap 3",
-  version: "0.2.9",
+  version: "0.3.0",
 	name: "apinf:accounts-admin-ui",
   git: "https://github.com/apinf/meteor-accounts-admin-ui-bootstrap-3.git"
 });
@@ -8,8 +8,15 @@ Package.describe({
 Package.onUse(function (api) {
 	api.versionsFrom('1.2.1');
 	api.use('templating', 'client');
-	api.use('underscore');
-	api.use("apinf:first-admin@0.1.2", 'server');
+	api.use('apinf:first-admin@0.1.2', 'server');
+	api.use('alanning:roles@1.2.11', ['client', 'server']);
+	api.use(['accounts-ui@1.0.0',
+		'accounts-password@1.3.0',
+		'kurounin:pagination-blaze@1.0.2',
+		'session',
+		'twbs:bootstrap@3.3.6',
+		'underscore'
+	]);
 
 	// Add client & server files
 	api.addFiles('libs/user_query.js', ['client', 'server']);
