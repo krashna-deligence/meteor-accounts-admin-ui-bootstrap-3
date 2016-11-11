@@ -72,7 +72,7 @@ Template.accountsAdmin.onCreated(function() {
   this.pagination = new Meteor.Pagination(Meteor.users, {
     // TODO: configurable limit
     // Count of records in table
-    perPage: 2,
+    perPage: 25,
     // Set sort
     sort: { emails: 1 }
   });
