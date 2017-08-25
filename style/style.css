@@ -27,3 +27,10 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.users-items {
+    margin-top: -28px;
+}
+.users-items .items-on-page {
+    float: none;
+}

@@ -42,7 +42,11 @@
     {{/each}}
     </tbody>
   </table>
-  <div class="form-inline">
+  <div class="text-center">  
+    {{> defaultBootstrapPaginator pagination=templatePagination limit=10 containerClass=""}}
+  </div>
+  <div class="clearfix"></div>
+  <div class="users-items">
     <span class="items-on-page">
       Showing
       <strong>
@@ -54,7 +58,6 @@
       </strong>
       users
     </span>
-    {{> defaultBootstrapPaginator pagination=templatePagination limit=10 containerClass="pull-right"}}
   </div>
   {{> updateRolesModal}}
   {{> deleteAccountModal}}
