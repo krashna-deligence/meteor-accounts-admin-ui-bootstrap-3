@@ -19,18 +19,10 @@
 
 .items-on-page {
     vertical-align: middle;
-    float: left;
     line-height: 2em;
 }
 
 .pagination {
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.users-items {
-    margin-top: -28px;
-}
-.users-items .items-on-page {
-    float: none;
 }

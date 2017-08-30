@@ -42,23 +42,18 @@
     {{/each}}
     </tbody>
   </table>
-  <div class="text-center">  
-    {{> defaultBootstrapPaginator pagination=templatePagination limit=10 containerClass=""}}
-  </div>
-  <div class="clearfix"></div>
-  <div class="users-items">
-    <span class="items-on-page">
-      Showing
-      <strong>
-        {{currentItems}}
-      </strong>
-      of
-      <strong>
-        {{totalItems}}
-      </strong>
-      users
-    </span>
-  </div>
+  <span class="items-on-page">
+    Showing
+    <strong>
+      {{currentItems}}
+    </strong>
+    of
+    <strong>
+      {{totalItems}}
+    </strong>
+    users
+  </span>
+  {{> defaultBootstrapPaginator pagination=templatePagination limit=10 containerClass="text-center"}}
   {{> updateRolesModal}}
   {{> deleteAccountModal}}
   {{> infoAccountModal}}
