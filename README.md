@@ -19,7 +19,12 @@ A roles based account management system using bootstrap 3 for Meteor.
 - User impersonation (for admins)
 
 ## History
-**Latest Version:** 0.2.6
+
+**Latest Version:** 0.3.2
+- Fix misplaced pagination buttons and minor css issues
+
+**Version:** 0.2.6
+
 - Remove hard dependency to bootstrap-3 (so less-bootstrap-3 or similar can be used). (Thanks to [@johnm](https://github.com/johnm))
 - Documentation updates
 - Fixes [Issue #18](https://github.com/hharnisc/meteor-accounts-admin-ui-bootstrap-3/issues/18)
