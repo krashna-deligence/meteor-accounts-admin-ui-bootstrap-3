@@ -32,6 +32,7 @@ Template.updateAccountModalInner.helpers({
 
 Template.updateAccountModalInner.events({
 	'click .add-role': function(event, template) {
+		event.preventDefault();
 		var role = this.toString();
 		var userId = event.currentTarget.getAttribute('data-user-id');
 		Meteor.call('addUserRole', userId, role, function(error) {
